@@ -1,0 +1,276 @@
+
+rightclick on website->viewsource->we can get the html code of the webpp
+page
+
+
+{not case sensitive}HTML->hypertext markup language
+code used to structure a webpage and its content
+
+HTML TAG->the component used to design the structure of the webpage
+
+in html
+->always create a file named be default(index.HTML) as the server makes sure it is the home page for the website
+
+html tag->is a container for some content or some other html tags
+{basically used to store text,paragraphs etc etc}
+
+<p> this is paragraph </p>
+ |                      |
+openning               closing 
+  tag                    tag
+    
+
+
+basic format HTML page
+
+<!DOCTYPE.html> it tells browser u r using html with version for writing webpages
+<html>  root of an html document
+<head>{it contains the metadata which is useful but that data doesnot get displayed on the screen}
+<title> we can give the name</title>
+</head>
+<body>{it contains all the data which u want to display on the screen}
+</body>
+</html>
+
+QUICK POINTS
+
+**html tag is the parent of head and body tags
+**most of the tags in html has opening and closing tags
+**some tags have no content in between eg:<br>
+**we can use inspect element/view page source to edit html
+
+html comments
+      |
+<!-- text -->
+
+ LEVEL-2
+
+*HTML attributes 
+ ->used to add more information to the tags
+eg
+ <html lang="en"> is a attribute
+       |
+  here the language is english
+*HEADING TAG->used to display the headings in HTML
+ h1,h2,h3,h4,h5,h6{used to display less imp info}
+  |
+ used to display important info
+ANCHOR TAG->used to add link to the webpages
+<a href="google.com"google> </a>
+*we can not only link other websites but also link other html documents in the webpage
+all webpages are linked in a website
+
+->there are 2 links
+relative link-linking to our own other webpage
+absolute link-linking to other webpage
+
+image tag:-to add the images to ur page
+<image src="/image.png"alt= "random image" height="100" width="50"/>{height and width used to resize the image
+        |         |
+ gives link     address of the image
+of the webpage
+
+use of the alt is->whenever the image link is correct then image gets displayed on screen
+incase if there is any server issue or any error in the link then the image doesnt get displayed instead the thing which we wrote on alt tab 
+gets displayed
+
+br tag->used to add text to the next line
+<br/>
+
+**bold,italic,underline tags->used to highlight text
+<b>BOLD</b>  eg:- <p><b>this is</b> a paragraph</p>
+<i>text</i>
+<u>text</u>
+
+**BIG AND SMALL TAGS
+<big> this tag shows big text</big>
+<small> this tag shows small text</small>
+
+hr tag:-used to seperate the text with lines
+syntax   <hr/>
+
+SUBSCRIPT AND SUPERSCRIPT TAGS
+used to display chemical formulas
+<sub> subscript</sub>
+eg H20
+
+<sup> superscript</sup>
+eg:- <p>2<sup>n</sup>+3<sup>n</sup></p>
+2n+3n
+
+by default html doesnot count spaces
+eg <p> hi        hello</p>
+o/p:hi hello
+so inorder to count spaces
+the we can use pre tags
+<pre>hi    hello</pre>
+o/p:hi    hello
+
+PAGE LAYOUT TECHNICQUES
+semantic tags   {tags that define the meaning of the content they contain
+->more readibility and greater accessibility
+     |
+  header
+  main
+  footer
+header->SYNTAX:-<body>
+    <header>
+        <pre>
+            <p>education              projects</p>
+        </pre>
+    </header>
+
+inside main tag
+section tag->used for a sectioning on ur page
+article tag for an article on ur page
+aside tag for content aside main ads
+EG:-
+<body>
+    <header>
+        <pre>
+            <p>education              projects</p>
+        </pre>
+    </header>
+    <main>
+        <section>EDUCATION ST Anthony's High School | Himayatnagar</section>
+        <section>EXPERIENCE Eicrosoft | Intern</section>
+        <section>HOBBIES Playing Guitar | Dancing</section>
+<article>my story:</article>
+<aside>this is an add</aside>
+    </main>
+    <footer>
+        <h5>contact me @srilekha2005</h5>
+    </footer>
+</body>
+</html>
+
+important aspect of anchor tag
+ <a href="https://www.google.com/">google</a> {this will open the link in the same tab}
+ <a href="https://www.google.com/"target="_main">google</a> {this will open the link in different tab}
+or
+<a href="https://www.google.com/"target="_main"><img src="https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo.jpg"alt="google"height="100"></a>
+if u want to create a image and by clicking image if u want to link to any other website u can usie this anchor atg 
+
+DIV TAG{non symentic tag}
+ is a container used to other HTML elemnts
+->it takes full width
+syntax
+  <div><p>hello world</p></div>
+SPAN TAG
+ is also container to other elements
+->it takes width as per the size
+synatx
+ <span><p>bye</p></span>
+
+LEVEL-4:-
+  used to rep real life list data
+              |
+_______________________________________________________________
+|                                                              |                             
+unordered                                                  ORDERED
+                 
+<ul>->to create an unorderd list                        <OL>
+<li>apple</li>->list elements                           
+<li>mango</li>                                           </OL>
+</ul>
+DIFF BTW ORDERD LIST<OL> AND DEPICTED WITH NUMBERS AND UNOREDERD LIST<UL> DEPICTED WITH BULLETS
+TO CREATE UNORDERED SUB LISTS
+
+ <ul>                                                      
+        <li>mango</li>                                      
+        <li>mango</li>
+        <ul>
+          <li>color:yellow</li>
+          <li>season:summer</li>
+
+TABLES IN HTML
+used to rep realife table data
+
+<tr> used to display table row
+<td> used to display table data
+<th> used to display table header
+
+CAPTIONS IN TABLE
+<caption>student</caption>
+
+thead and tbody in tables
+<thead> to wrap table head
+<tbody> to wrap table body
+  <tr>
+  <th colspan="2">INFORMATION</th>
+for two rowa the column head will be in middleit will merge the two columns correctly
+
+FORMS are used to collect data from the user
+eg:-signup/login/help rquests/contact me
+
+<form>
+form content
+</form>
+ACTION IN FORM
+
+
+form element:input
+<input type="text" placeholder="enter name">
+
+LABEL
+{only u can select only one button at a time}
+ <input type="radio" value="class 11"name="class">class11
+    <input type="radio"value="class12"name="class">class12
+
+
+ <label for="101">
+    <input type="radio" value="class 11"name="class" id="101">class11
+    </label>
+    <label for="102">
+    <input type="radio"value="class12"name="class" id="102">class12
+</label>
+</form>
+even if we click on the text the radio button gets clicked
+
+CLASS AND ID
+<div id="id1" class="group1">
+</div>
+LABELS
+<h4>select your fav subjects</h4>
+<label for="math">
+    <input type="checkbox" value="math" name="subject" id="101">math
+</label>
+<br><br>
+<label for="phy">
+    <input type="checkbox" value="phy" name="subject" id="105">phy
+</label>
+<br><br>
+<label for="chem">
+    <input type="checkbox" value="chem" name="subject" id="106">chem
+</label>
+<br><br>
+
+
+
+ TO GIVE FEEDBACKS
+
+<textarea name="feedaback" id="101" placeholder="please gibe ur valuable feedback here heigh="rows=5">feedback</textarea> 
+</body>
+
+ SELECT
+
+<h4>SELECT YOUR CITY</h4>
+<select name="city">
+    <option value="delhi">delhi</option>
+    <option value="banglore">banglore</option>
+    <option value="hyd">hyd</option>
+    <option value="pune">pune</option>
+</select>
+
+TO GET A SUBMIT BUTTON
+
+<input type="submit" value="submit"> 
+
+IFRAME TAG
+
+website inside a website
+
+
+
+
+      
